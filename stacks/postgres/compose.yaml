@@ -1,0 +1,27 @@
+services:
+
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+
+    environment:
+      BWS_TOKEN: [[BWS_TOKEN]]
+      BWS_VAR_1: pg.admin.password=POSTGRES_USER
+      BWS_VAR_2: pg.admin.username=POSTGRES_PASSWORD
+    
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  postgres_data:
+
+secrets:
+  bws_token:
+    file: 
