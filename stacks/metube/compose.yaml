@@ -9,5 +9,5 @@ services:
       STATE_DIR: /metube-state
     volumes:
       - /shared/metube:/downloads
-      - ./metube-state:/metube-state
+      - /data/metube/state:/metube-state
 

@@ -11,7 +11,7 @@ services:
       - "6881:6881"
       - "6881:6881/udp"
     volumes:
-      - ./gluetun-data:/gluetun
+      - /data/qbg/gluetun-data:/gluetun
     environment:
       - VPN_SERVICE_PROVIDER=protonvpn
       - VPN_TYPE=wireguard
@@ -31,7 +31,7 @@ services:
       - TZ=America/New_York
       - WEBUI_PORT=8080
     volumes:
-      - ./qbittorrent-config:/config
+      - /data/qbg/qbittorrent-config:/config
       - /shared/qbg:/downloads
     depends_on:
       gluetun:
