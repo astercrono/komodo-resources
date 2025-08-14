@@ -1,11 +1,8 @@
 [[stack]]
-name = "qbg"
+name = "metube"
 [stack.config]
 server = "rcv"
 linked_repo = "komodo-resources"
 webhook_enabled = false
-run_directory = "stacks/qbg/"
+run_directory = "stacks/metube/"
 file_paths = ["compose.yaml"]
-environment = """
-WIREGUARD_PRIVATE_KEY=[[QBG_WG_PKEY]]
-"""

@@ -1,0 +1,13 @@
+[[deployment]]
+name = "cronicle"
+[deployment.config]
+server = "komo-main"
+image.type = "Image"
+image.params.image = "soulteary/cronicle"
+volumes = """
+/etc/localtime:/etc/localtime:ro
+/etc/timezone:/etc/timezone:ro
+./data/data:/opt/cronicle/data:rw
+./data/logs:/opt/cronicle/logs:rw
+./data/plugins:/opt/cronicle/plugins:rw
+"""

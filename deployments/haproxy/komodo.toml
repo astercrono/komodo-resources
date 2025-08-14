@@ -1,0 +1,8 @@
+[[deployment]]
+name = "haproxy"
+[deployment.config]
+server = "net-proxy"
+image.type = "Build"
+image.params.build = "net-proxy/haproxy"
+redeploy_on_build = true
+restart = "unless-stopped"

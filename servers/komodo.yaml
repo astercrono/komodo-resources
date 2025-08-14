@@ -1,0 +1,85 @@
+[[server]]
+name = "content"
+[server.config]
+address = "https://192.168.1.106:8120"
+enabled = true
+
+##
+
+[[server]]
+name = "cronbox"
+[server.config]
+address = "https://192.168.1.130:8120"
+enabled = true
+
+##
+
+[[server]]
+name = "db"
+[server.config]
+address = "https://192.168.1.105:8120"
+enabled = true
+
+##
+
+[[server]]
+name = "game1"
+[server.config]
+address = "https://192.168.6.100:8120"
+enabled = true
+
+##
+
+[[server]]
+name = "game2"
+[server.config]
+address = "https://192.168.6.103:8120"
+enabled = true
+
+##
+
+[[server]]
+name = "komo-main"
+[server.config]
+address = "https://periphery:8120"
+enabled = true
+
+##
+
+[[server]]
+name = "media"
+[server.config]
+address = "https://192.168.6.101:8120"
+enabled = true
+
+##
+
+[[server]]
+name = "net"
+[server.config]
+address = "https://192.168.1.100:8120"
+enabled = true
+
+##
+
+[[server]]
+name = "net-proxy"
+[server.config]
+address = "https://192.168.1.108:8120"
+enabled = true
+
+##
+
+[[server]]
+name = "rcv"
+[server.config]
+address = "https://192.168.1.104:8120"
+enabled = true
+
+##
+
+[[server]]
+name = "src"
+[server.config]
+address = "https://192.168.1.107:8120"
+enabled = true

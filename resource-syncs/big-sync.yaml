@@ -1,0 +1,14 @@
+[[resource_sync]]
+name = "big-sync"
+[resource_sync.config]
+repo = "jekotia/saturn"
+branch = "master"
+git_account = "jekotia"
+webhook_enabled = false
+resource_path = [
+  "stacks/",
+  "deployments/",
+  "builders/",
+  "sservers/"
+]
+delete = true

@@ -1,0 +1,8 @@
+[[stack]]
+name = "quakejs"
+[stack.config]
+server = "game1"
+linked_repo = "komodo-resources"
+webhook_enabled = false
+run_directory = "stacks/quakejs/"
+file_paths = ["compose.yaml"]

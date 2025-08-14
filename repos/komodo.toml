@@ -1,0 +1,18 @@
+[[repo]]
+name = "komodo-resources"
+[repo.config]
+server = "komo-main"
+git_account = "astercrono"
+repo = "astercrono/komodo-resources"
+webhook_enabled = false
+
+##
+
+[[repo]]
+name = "net-proxy/astercrono/haproxy"
+[repo.config]
+server = "net-proxy"
+builder = "net-proxy/builder"
+git_account = "astercrono"
+repo = "astercrono/komodo-resources"
+webhook_enabled = false

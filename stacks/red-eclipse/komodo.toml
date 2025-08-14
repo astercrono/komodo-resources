@@ -1,0 +1,8 @@
+[[stack]]
+name = "red-eclipse"
+[stack.config]
+server = "game2"
+linked_repo = "komodo-resources"
+webhook_enabled = false
+run_directory = "stacks/red-eclipse/"
+file_paths = ["compose.yaml"]

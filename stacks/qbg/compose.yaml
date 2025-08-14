@@ -15,7 +15,7 @@ services:
     environment:
       - VPN_SERVICE_PROVIDER=protonvpn
       - VPN_TYPE=wireguard
-      - WIREGUARD_PRIVATE_KEY=[[QBG_WG_PKEY]]
+      - WIREGUARD_PRIVATE_KEY=${WIREGUARD_PRIVATE_KEY}
       - VPN_PORT_FORWARDING=on
       - FIREWALL_VPN_INPUT_PORTS=8080
       - TZ=America/New_York

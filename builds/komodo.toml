@@ -1,0 +1,8 @@
+[[build]]
+name = "net-proxy/haproxy"
+[build.config]
+builder = "net-proxy/builder"
+image_name = "clab-haproxy"
+linked_repo = "net-proxy/astercrono/haproxy"
+webhook_enabled = false
+build_path = "./deployments/haproxy"

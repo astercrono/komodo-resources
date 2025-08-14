@@ -1,0 +1,8 @@
+[[stack]]
+name = "npm"
+[stack.config]
+server = "net"
+linked_repo = "komodo-resources"
+webhook_enabled = false
+run_directory = "stacks/npm/"
+file_paths = ["compose.yaml"]

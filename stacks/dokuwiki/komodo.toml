@@ -1,0 +1,8 @@
+[[stack]]
+name = "dokuwiki"
+[stack.config]
+server = "content"
+linked_repo = "komodo-resources"
+webhook_enabled = false
+run_directory = "stacks/dokuwiki/"
+file_paths = ["compose.yaml"]

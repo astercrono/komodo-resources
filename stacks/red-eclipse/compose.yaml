@@ -1,0 +1,15 @@
+services:
+    redeclipse:
+        image: iceflower/redeclipse-server:master
+        ports:
+            - "28801:28801/udp"
+            - "28802:28802/udp"
+        restart: unless-stopped
+        volumes:
+            - ./re-config/home:/re-server-config/home
+            - ./re-config/package:/re-server-config/package
+        logging:
+            options:
+                max-size: "2000k"
+                max-file: "10"
+

@@ -1,0 +1,17 @@
+[[deployment]]
+name = "valheim"
+[deployment.config]
+server = "game1"
+image.type = "Image"
+image.params.image = "lloesche/valheim-server"
+restart = "unless-stopped"
+volumes = """
+$HOME/valheim-server/config:/config
+$HOME/valheim-server/data:/opt/valheim
+"""
+environment = """
+SERVER_NAME = Lambda Complex
+WORLD_NAME = Cron World
+SERVER_PASS = [[VALHEIM_PASSWD]]
+SERVER_PUBLIC = false
+"""

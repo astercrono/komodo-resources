@@ -1,0 +1,8 @@
+[[stack]]
+name = "jellyfin"
+[stack.config]
+server = "media"
+linked_repo = "komodo-resources"
+webhook_enabled = false
+run_directory = "stacks/jellyfin/"
+file_paths = ["compose.yaml"]

@@ -1,0 +1,8 @@
+[[stack]]
+name = "forgejo"
+[stack.config]
+server = "src"
+linked_repo = "komodo-resources"
+webhook_enabled = false
+run_directory = "stacks/forgejo/"
+file_paths = ["compose.yaml"]
