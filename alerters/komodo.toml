@@ -1,0 +1,6 @@
+[[alerter]]
+name = "Discord Notify"
+[alerter.config]
+enabled = true
+endpoint.type = "Discord"
+endpoint.params.url = "[[DISCORD_WEBHOOK]]"
