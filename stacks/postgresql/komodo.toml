@@ -1,0 +1,12 @@
+[[stack]]
+name = "postgresql"
+[stack.config]
+server = "db"
+linked_repo = "komodo-resources"
+webhook_enabled = false
+run_directory = "stacks/postgresql/"
+file_paths = ["compose.yaml"]
+environment = """
+POSTGRES_PASSWORD=[[POSTGRES_PASSWD]]
+POSTGRES_USER=[[POSTGRES_USER]]
+"""
