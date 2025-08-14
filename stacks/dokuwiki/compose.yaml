@@ -7,7 +7,7 @@ services:
       - PGID=1000
       - TZ=America/New_York
     volumes:
-      - ./dokuwiki-config:/config
+      - /data/dokuwiki/config:/config
     ports:
       - 80:80
       - 443:443

@@ -6,8 +6,8 @@ services:
             - "28802:28802/udp"
         restart: unless-stopped
         volumes:
-            - ./re-config/home:/re-server-config/home
-            - ./re-config/package:/re-server-config/package
+            - /data/red-eclipse/config/home:/re-server-config/home
+            - /data/red-eclipse/config/package:/re-server-config/package
         logging:
             options:
                 max-size: "2000k"

@@ -6,8 +6,8 @@ image.type = "Image"
 image.params.image = "lloesche/valheim-server"
 restart = "unless-stopped"
 volumes = """
-$HOME/valheim-server/config:/config
-$HOME/valheim-server/data:/opt/valheim
+/data/valheim/config:/config
+/data/valheim/valheim-server/data:/opt/valheim
 """
 environment = """
 SERVER_NAME = Lambda Complex
