@@ -1,0 +1,13 @@
+[[builder]]
+name = "local"
+[builder.config]
+type = "Server"
+params.server_id = "komo-main"
+
+##
+
+[[builder]]
+name = "net-proxy/builder"
+[builder.config]
+type = "Server"
+params.server_id = "net-proxy"

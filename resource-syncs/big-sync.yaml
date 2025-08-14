@@ -1,14 +1,7 @@
 [[resource_sync]]
 name = "big-sync"
 [resource_sync.config]
-repo = "jekotia/saturn"
-branch = "master"
-git_account = "jekotia"
+linked_repo = "komodo-resources"
 webhook_enabled = false
-resource_path = [
-  "stacks/",
-  "deployments/",
-  "builders/",
-  "sservers/"
-]
+resource_path = ["./"]
 delete = true
