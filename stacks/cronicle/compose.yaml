@@ -1,7 +1,3 @@
-networks:
-  cronicle_network:
-    external: false
-
 services:
   cronicle:
     image: soulteary/cronicle
@@ -12,8 +8,7 @@ services:
       - /data/cronicle/data:/opt/cronicle/data:rw
       - /data/cronicle/logs:/opt/cronicle/logs:rw
       - /data/cronicle/plugins:/opt/cronicle/plugins:rw
-    networks:
-      - cronicle_network
+    network_mode: host
     ports:
       - '80:80'
     restart: unless-stopped
