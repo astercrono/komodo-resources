@@ -13,7 +13,7 @@ services:
       - /data/cronicle/logs:/opt/cronicle/logs:rw
       - /data/cronicle/plugins:/opt/cronicle/plugins:rw
     networks:
-      cronicle_network
+      - cronicle_network
     ports:
       - '80:80'
     restart: unless-stopped
