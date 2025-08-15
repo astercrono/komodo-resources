@@ -1,0 +1,8 @@
+[[stack]]
+name = "cronicle"
+[stack.config]
+server = "komo-main"
+linked_repo = "komodo-resources"
+webhook_enabled = false
+run_directory = "stacks/cronicle/"
+file_paths = ["compose.yaml"]
